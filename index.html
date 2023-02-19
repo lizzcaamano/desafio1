@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Card Compra</title>
+</head>
+<body>
+    
+    <section class="container">
+    <form action="">
+    <h1>Laptop Gamer</h1>
+    <div id="imagen" class="imagen">
+        <img class="img-cambio" id="img-cambio" src="./img/lenovo-laptop-ideapad-gaming-3-gen-6-15-amd-gallery-1.webp" alt="imagen de referecia laptop">
+    </div> 
+    <p class="precio"> <strong>Precio:</strong> $4'000.000</p>
+    <input 
+    type="text" 
+    id="cantidad"
+    class="cantidad"
+    placeholder="Cantidad"
+    required
+    >
+    <select name="select" id="selectColor" class="selectColor" required>
+        <option value="seleccione">Seleccione color</option>
+        <option value="negro">Negro</option>
+        <option value="grisoscuro">Gris oscuro</option>
+        <option value="grisclaro">Gris claro</option>
+        <option value="azul">Azul</option>
+        <option value="rosado">Rosado</option>
+        <option value="rojo">Rojo</option>
+        <option value="morado">Morado</option>
+    </select>
+
+    <button type="button" class="btnCalcular" id="btnCalcular">Calcular</button>
+    </form>
+
+        <article id="mostCard" class="mostCard">
+        <div id="card-body" class="card-body">
+            <h2>Datos compra</h2>
+            <p class="total-cantidad">Cantidad: 0</p>
+            <p class="text-color">Color</p>
+            <div class="color">0</div>
+            <h3 class="total">Total: $0</h3>
+        </div>
+    </article>
+    
+    
+    </section>
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
